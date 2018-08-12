@@ -74,6 +74,7 @@ public class CrushyMaster extends Master{
 							
 						}else {
 							BEST_STRING = "  NO TIME  ";
+							BEST_TIME = -1;
 						}
 						in.close();
 					}
@@ -83,7 +84,7 @@ public class CrushyMaster extends Master{
 	}
 	
 	public static void compareTimes() {
-		if(TIMER < BEST_TIME) {
+		if( BEST_TIME == -1 || (TIMER < BEST_TIME)) {
 			BEST_TIME = TIMER;
 			writeBestTime();
 		}

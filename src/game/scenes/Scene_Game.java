@@ -40,6 +40,7 @@ import game.master.CrushyMaster;
 import game.scripts.GameScript;
 import game.scripts.Level1Script;
 import game.scripts.Level3Script;
+import game.scripts.LevelWinScript;
 
 public class Scene_Game extends Scene{
 

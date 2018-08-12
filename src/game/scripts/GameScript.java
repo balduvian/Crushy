@@ -182,9 +182,9 @@ public class GameScript extends SceneScript{
 	}
 	
 	public void makeTop(int high, int off) {
-		scene.createMap(topLoader, 0, (-high * 16 * 18 ) + (7 * 16) + off, true);
+		scene.createMap(topLoader, 0, (-high * 16 * 18 ) + (7 * 16) + off + 32, true);
 		endX = 14 * 16;
-		endY = (-high * 16 * 17 ) + (15 * 16) + off;
+		endY = (-high * 16 * 17 ) + (15 * 16) + off + 32;
 	}
 	
 	public void makeSection(MapLoader left, MapLoader right, int high) {
