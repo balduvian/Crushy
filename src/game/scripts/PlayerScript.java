@@ -359,9 +359,15 @@ public class PlayerScript extends ObjectScript{
 			if(xVel > 0) {
 				animRow = 2;
 				lastFacing = true;
-			}else {
+			}else if(xVel < 0){
 				animRow = 3;
 				lastFacing = false;
+			}else {
+				if(lastFacing) {
+					animRow = 2;
+				}else {
+					animRow = 3;
+				}
 			}
 		}else {
 			if(xVel > 0) {
