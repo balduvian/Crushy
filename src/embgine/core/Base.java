@@ -54,7 +54,7 @@ public class Base{
 	
 	public static void main(String args[]) {
         String os = System.getProperty("os.name");
-        if (os.startsWith("Windows")) {
+        if (!os.startsWith("Windows")) {
             if (args.length == 0) {
                 try {
                     Runtime.getRuntime().exec(new String[]{"java", "-XstartOnFirstThread", "-jar", "Crushy.jar", "noReRun"});
