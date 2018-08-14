@@ -53,7 +53,20 @@ public class Base{
 	private float scanSpeed;
 	
 	public static void main(String args[]) {
-		new Base();
+        String os = System.getProperty("os.name");
+        if (os.startsWith("Windows")) {
+            if (args.length == 0) {
+                try {
+                    Runtime.getRuntime().exec(new String[]{"java", "-XstartOnFirstThread", "-jar", "Crushy.jar", "noReRun"});
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }else if (args[0].equals("noReRun")) {
+                new Base();
+            }
+        }else {
+            new Base();
+        }
 	}
 	
 	private Base() {
