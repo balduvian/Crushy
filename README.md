@@ -1,2 +1,2 @@
 # Crushy
-Chrushy game for DL 42 - running out of space
+Balduvian's submission for Ludum Dare 42 - Running Out Of Space
